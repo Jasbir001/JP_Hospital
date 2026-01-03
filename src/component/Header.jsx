@@ -1,50 +1,37 @@
 
-function Header(){
-    return(
-        <>
-        <nav class="navbar navbar-expand-lg">
-  <div class="container-fluid">
-    <a class="navbar-brand"><img 
-        src="/image/jp_logo"
-        alt="JP Hospital Logo"
-        width="40"
-        height="40"
-        class="me-2"
-      />
-Navbar</a>
-    
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"/></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-      
-      </ul>
-    
-    </div>
-  </div>
-</nav>
+import logo from "../assets/image/jp_logo.jpg";
 
- 
-        </>
-    )
+function Header() {
+  return (
+    <nav className="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+      <div className="container-fluid">
+        <div className="navbar-brand fw-bold d-flex align-items-center" to="/">
+          <img src={logo} alt="logo" width="50" height="50" className="rounded me-2"/>
+            <h4>JP Hospital</h4>
+        </div>
+
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav ms-auto">
+            <li className="nav-item">
+              <a className="nav-link" to="/">Home</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" to="/about">About</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" to="/about">Contact</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" to="/appointment">Appointment</a>
+            </li>
+            <li className="nav-item">
+              <a className="btn btn-light ms-2" to="/login">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  );
 }
 
-export default Header
+export default Header;
