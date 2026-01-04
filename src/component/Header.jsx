@@ -11,7 +11,7 @@ function Header() {
         </div>
 
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto">
+          <ul className="navbar-nav w-100">
             <li className="nav-item">
               <a className="nav-link" to="/">Home</a>
             </li>
@@ -22,10 +22,16 @@ function Header() {
               <a className="nav-link" to="/about">Contact</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" to="/appointment">Appointment</a>
+              <a className="nav-link" to="/doctors">Doctors</a>
             </li>
             <li className="nav-item">
-              <a className="btn btn-light ms-2" to="/login">Login</a>
+              <a className="nav-link" to="/services">Services</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" to="/appointment">Appointment</a>
+            </li>
+            <li className="nav-item ms-auto">
+              <a className="btn btn-light" to="/login">Login</a>
             </li>
           </ul>
         </div>
