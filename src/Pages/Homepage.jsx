@@ -1,3 +1,4 @@
+import DoctorsPreview from "../component/DoctorsPreview";
 import Header from "../component/Header";
 import { Main } from "../component/Main";
 import Services from "../component/Services";
@@ -9,6 +10,7 @@ function Homepage()
            <Header/>
             <Main/>
             <Services/>
+            <DoctorsPreview/>
         </>
     )
 }
